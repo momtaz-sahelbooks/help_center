@@ -83,7 +83,7 @@ img.roundImg {
 /* home page */
 .layoutFet {
     background-image: url(../img/banner.png);
-    /* background-position: center center; */
+    background-position: center center;
     background-size: cover;
     position: relative;
     min-height: 100vh;
@@ -338,5 +338,11 @@ img.roundImg {
 @media (max-width:768px) {
     .saleSec .outerSec .innerSec {
         text-align: center;
+    }
+}
+
+@media (max-width:545px) {
+    .layoutFet {
+        background-position: -143px;
     }
 }
