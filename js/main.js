@@ -9,4 +9,7 @@ $(document).ready(function () {
     }).on('hide.bs.collapse', function () {
         $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
     });
+    $("#btnSocialMenu").click(function () { 
+        $(".socialBtns").toggleClass('active');
+    });
 });

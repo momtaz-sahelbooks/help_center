@@ -333,6 +333,62 @@ img.roundImg {
     text-decoration: underline !important;
 }
 
+/* multiple buttons style */
+.socialBtns .more-button-list {
+    background-color: #fff;
+    border-radius: 8px;
+    list-style-type: none;
+    width: 140px;
+    /* height: 170px; */
+    box-shadow: 0px 0px 4px 4px rgba(150, 157, 249, 0.16);
+    padding: 0;
+    padding: 6px;
+    position: absolute;
+    /* right: 24px; */
+    left: 27px;
+    bottom: -97px;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: all 0.3s ease 0.1s;
+}
+
+.socialBtns .more-button-list .more-button-list-item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: #1c3991;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0;
+    position: relative;
+    transition: 0.2s ease-in;
+    transform: translatex(-10px);
+}
+
+.socialBtns .more-button-list .more-button-list-item a {
+    color: #1c3991;
+}
+
+
+.socialBtns.active .more-button-list {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.socialBtns.active .more-button-list .more-button-list-item {
+    -webkit-animation: fadeInItem 0.6s 0.2s forwards;
+    animation: fadeInItem 0.6s 0.2s forwards;
+}
+
+@keyframes fadeInItem {
+    100% {
+        transform: translatex(0px);
+        opacity: 1;
+    }
+}
+
 /* media query */
 
 @media (max-width:768px) {
